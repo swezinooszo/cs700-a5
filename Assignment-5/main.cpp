@@ -15,17 +15,23 @@ using namespace std;
 
 int main(){
 
-    
+    // read letter and morse code data from a file to build a map 
     map<char,string> morse_code_map = read_data_from_file("letter.txt");
     
-
+    // build a morse code tree using binary tree and morse_code_map
     Binary_Tree<string>* morse_code_tree = new Binary_Tree<string>();
     morse_code_tree->build_morse_code_tree(morse_code_map);
     
+    // enter a message
+    string message = " ";
+    cout << "Enter a message" <<endl;
+    getline(cin,message);
 
-    string encoded_message = morse_code_tree->encode_message("Hello World",morse_code_map);
+    // encode the entered messsage into morse code using morse code map
+    string encoded_message = morse_code_tree->encode_message(message,morse_code_map);
     cout << "Coded message: " << encoded_message << endl;
 
+    // decode the encoded messsage using morse tree
     string decoded_message = morse_code_tree->decode_message(encoded_message);
     cout << "Decoded message: " << decoded_message << endl;
     
