@@ -1,7 +1,12 @@
+/** @file Binary_Tree.h
+ * @author Swe Zin Oo
+ * @date 26 Mar 2024
+ * @brief A Binary Tree class which will be used to implment morse code tree, to encode message into morse code and to decode morse code
+ * into a message.
+*/
+
 #ifndef BINARY_TREE_H
 #define BINARY_TREE_H
-
-/** Class for a binary tree. */
 
 #include <cstddef>
 #include <sstream>
@@ -222,7 +227,7 @@ std::string Binary_Tree<Item_Type>::encode_message(const std::string& message, s
             encodedMessage += " ";
         }
         else {
-            // retrieve the morse code based on letter from message.
+            // retrieve the morse code from morse code map which match with letter.
             std::string morse_code = morse_code_map[c];
             encodedMessage += morse_code; 
             // add space between morse code
