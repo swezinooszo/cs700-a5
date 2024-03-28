@@ -1,3 +1,9 @@
+/** @file BTNode.h
+ * @author Swe Zin Oo
+ * @date 26 Mar 2024
+ * @brief A node class for a Binary Tree.
+*/
+
 #ifndef BTNODE_H_
 #define BTNODE_H_
 #include <sstream>
