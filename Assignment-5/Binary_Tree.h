@@ -1,8 +1,10 @@
 /** @file Binary_Tree.h
  * @author Swe Zin Oo
  * @date 26 Mar 2024
- * @brief A Binary Tree class which will be used to implment morse code tree, to encode message into morse code and to decode morse code
- * into a message.
+ * @brief A Binary tree class which will be used to implment morse code tree, encoding and decoding message using morse code map and morse code tree.
+ *  The mainly used functions are build_morse_code_tree(), which is for implementing morse code tree,
+ * encode_message() is used for encoding message into morse code and
+ * decode_message() is for decoding morse code into a message.
 */
 
 #ifndef BINARY_TREE_H
