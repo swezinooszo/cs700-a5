@@ -9,6 +9,6 @@
 using namespace std;
 
 /** Read the data (letter and morse code) from a file
- * @param vector vector to be sorted in ascending order
+ * @param filename filename
 */ 
 map<char,string> read_data_from_file(string filename);
