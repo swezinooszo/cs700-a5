@@ -10,5 +10,6 @@ using namespace std;
 
 /** Read the data (letter and morse code) from a file
  * @param filename filename
+ * @return return the map which include letter as char and morse code as string
 */ 
 map<char,string> read_data_from_file(string filename);
